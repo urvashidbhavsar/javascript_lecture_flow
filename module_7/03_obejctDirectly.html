@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function person(firstname, lastname, DateOfBirth, MobileNo) {
+            this.firstname = firstname
+            this.lastname = lastname
+            this.DateOfBirth = DateOfBirth
+            this.MobileNo = MobileNo
+        }
+
+        var per = new person("Urvashi", "Bhavsar", "30-11-93", 8980200269)
+
+        console.log(per);
+        console.log(per.firstname);
+        console.log(per.lastname);
+        console.log(per.DateOfBirth);
+        console.log(per.MobileNo);
+
+        console.log("===========================");
+        // using loop
+
+        for (const p in per) {
+            console.log(per[p]);
+        }
+    </script>
+</body>
+
+</html>

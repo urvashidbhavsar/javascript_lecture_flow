@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            firstname: "Urvashi",
+            lastname: "Bhavsar",
+            DateOfBirth: "30-11-93",
+            MobileNo: 8980200269
+        }
+
+        console.log(person);
+        console.log(person.firstname);
+        console.log(person.lastname);
+        console.log(person.DateOfBirth);
+        console.log(person.MobileNo);
+
+        console.log("===========================");
+        // using loop
+
+        for (const p in person) {
+            console.log(person[p]);
+        }
+    </script>
+</body>
+
+</html>
