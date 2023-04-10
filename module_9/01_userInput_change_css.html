@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+    </style>
+    <script>
+        function set_color() {
+            let clr = document.getElementById("colors").value;
+            if (clr == "green") {
+                document.getElementById("div1").style.backgroundColor = "green"
+                return false
+            } else if (clr == "Red") {
+                document.getElementById("div1").style.backgroundColor = "red"
+                return false
+            } else if (clr == "blue") {
+                document.getElementById("div1").style.backgroundColor = "blue"
+                return false
+            } else if (clr == "Black") {
+                document.getElementById("div1").style.backgroundColor = "black"
+                return false
+            } else if (clr == "Yellow") {
+                document.getElementById("div1").style.backgroundColor = "Yellow"
+                return false
+            } else if (clr == "Gray") {
+                document.getElementById("div1").style.backgroundColor = "gray"
+                return false
+            } else if (clr == "Pink") {
+                document.getElementById("div1").style.backgroundColor = "pink";
+                return false
+            } else if (clr == "brown") {
+                document.getElementById("div1").style.backgroundColor = "brown";
+                return false
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- select color from dropdown and fill color in div -->
+    <form action="">
+        <label for="">Select Color : </label>
+
+        <select name="" id="colors">
+            <option value="">---select---</option>
+            <option value="green">Green</option>
+            <option value="Red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Gray">Gray</option>
+            <option value="Pink">Pink</option>
+            <option value="brown">Brown</option>
+        </select>
+
+        <button onclick="return set_color()">Set Color</button>
+
+        <hr>
+        <div class="div1" id="div1"></div>
+    </form>
+</body>
+
+</html>
