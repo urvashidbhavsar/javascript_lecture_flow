@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Number object represent the numeric value</h3>
+    <p>number may be in integer or floting value</p>
+
+    <table border="1" style="width:40%">
+        <caption>Javascript Number constant</caption>
+        <tr>
+            <th>Constant</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>MIN_VALUE</td>
+            <td>return the largest minimum value</td>
+        </tr>
+        <tr>
+            <td>MAX_VALUE</td>
+            <td>return the largest maximum value</td>
+        </tr>
+        <tr>
+            <td>POSITIVE_INFINITY</td>
+            <td>return overflow value, positive infinity</td>
+        </tr>
+        <tr>
+            <td>NEGATIVE_INFINITY</td>
+            <td>return overflow value, negative infinity</td>
+        </tr>
+        <tr>
+            <td>NaN</td>
+            <td>represents "Not a Number" value.</td>
+        </tr>
+    </table>
+    <hr color="black">
+    <script>
+        let num1 = 45;
+        let num2 = 56;
+
+        document.write(num1 + num2 + "<br>")
+        // for this you can use number object 
+        document.write("Addition is : " + num1 + num2 + "<br>");
+
+        document.write("Addition is : " + (num1 + num2) + "<br>")
+        // or
+        document.write("Addition is : " + Number(num1 + num2) + "<br>")
+
+
+        let num3 = Number(12);
+        document.write(num3 + "<br>")
+
+        let num4 = Number(12.12);
+        document.write(num4 + "<br>")
+
+        let num5 = Number(12e4);
+        document.write(num5 + "<br>")
+
+    </script>
+</body>
+
+</html>
